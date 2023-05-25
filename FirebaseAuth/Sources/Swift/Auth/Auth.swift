@@ -2133,7 +2133,7 @@ import FirebaseAppCheckInterop
         @param callback A block which is invoked when the sign in finishes (or is cancelled.) Invoked
             asynchronously on the global auth work queue in the future.
      */
-  private func signIn(withPhoneCredential credential: PhoneAuthCredential,
+    private func signIn(withPhoneCredential credential: PhoneAuthCredential,
                         operation: AuthOperationType,
                         callback: @escaping (VerifyPhoneNumberResponse?, Error?) -> Void) {
       if let temporaryProof = credential.temporaryProof, temporaryProof.count > 0,
