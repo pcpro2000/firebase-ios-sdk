@@ -46,6 +46,10 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (NSString *)generateQRCodeURLWithAccountName:(NSString *)accountName issuer:(NSString *)issuer {
+  if (!accountName || !self.secretKey || !self.hashingAlgorithm || !self.codeLength) {
+    return nil;
+  }
+
   NSString *urlString = [NSString
       stringWithFormat:@"otpauth://totp/%@:%@?secret=%@&issuer=%@&algorithm=%@&digits=%ld", issuer,
                        accountName, self.secretKey, issuer, self.hashingAlgorithm, self.codeLength];
