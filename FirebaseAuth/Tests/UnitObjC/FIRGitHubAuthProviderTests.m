@@ -51,12 +51,12 @@ static NSString *const kFirebaseAppID = @"appID";
                                                      auth:nil
                                           heartbeatLogger:nil
                                                  appCheck:nil];
-//  FIRAuthCredential *credential = [FIRGitHubAuthProvider credentialWithToken:kGitHubToken];
-//  FIRVerifyAssertionRequest *request =
-//      [[FIRVerifyAssertionRequest alloc] initWithProviderID:FIRGitHubAuthProvider.id
-//                                       requestConfiguration:requestConfiguration];
-//  [credential prepareVerifyAssertionRequest:request];
-//  XCTAssertEqualObjects(request.providerAccessToken, kGitHubToken);
+  //  FIRAuthCredential *credential = [FIRGitHubAuthProvider credentialWithToken:kGitHubToken];
+  //  FIRVerifyAssertionRequest *request =
+  //      [[FIRVerifyAssertionRequest alloc] initWithProviderID:FIRGitHubAuthProvider.id
+  //                                       requestConfiguration:requestConfiguration];
+  //  [credential prepareVerifyAssertionRequest:request];
+  //  XCTAssertEqualObjects(request.providerAccessToken, kGitHubToken);
 }
 
 @end

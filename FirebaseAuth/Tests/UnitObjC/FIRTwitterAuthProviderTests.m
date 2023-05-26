@@ -58,12 +58,12 @@ static NSString *const kFirebaseAppID = @"appID";
                                                      auth:nil
                                           heartbeatLogger:nil
                                                  appCheck:nil];
-//  FIRVerifyAssertionRequest *request =
-//      [[FIRVerifyAssertionRequest alloc] initWithProviderID:FIRTwitterAuthProvider.id
-//                                       requestConfiguration:requestConfiguration];
-//  [credential prepareVerifyAssertionRequest:request];
-//  XCTAssertEqualObjects(request.providerAccessToken, kTwitterToken);
-//  XCTAssertEqualObjects(request.providerOAuthTokenSecret, kTwitterSecret);
+  //  FIRVerifyAssertionRequest *request =
+  //      [[FIRVerifyAssertionRequest alloc] initWithProviderID:FIRTwitterAuthProvider.id
+  //                                       requestConfiguration:requestConfiguration];
+  //  [credential prepareVerifyAssertionRequest:request];
+  //  XCTAssertEqualObjects(request.providerAccessToken, kTwitterToken);
+  //  XCTAssertEqualObjects(request.providerOAuthTokenSecret, kTwitterSecret);
 }
 
 @end
